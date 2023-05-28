@@ -4,7 +4,7 @@
  */
 package com.mycompany.message.talk;
 /**
- *
+ * トーク情報クラス
  * @author SuzueKatsushige
  */
 public class Talk {
