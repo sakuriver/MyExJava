@@ -14,17 +14,24 @@ public class ServiceAccount {
     public String tel;
     public String deviceNumber;
     public String mailAddress;
+    public String location;
+    public boolean isPublic;
     public ServiceAccount(
             int _id, 
             String _name, 
             String _tel, 
             String _deviceNumber,
-            String _mailAddress
+            String _mailAddress,
+            String _location,
+            boolean _isPublic
     ) {
         this.id = _id;
         this.name = _name;
         this.tel = _tel;
         this.deviceNumber = _deviceNumber;
         this.mailAddress = _mailAddress;
+        this.location = _location;
+        this.isPublic = _isPublic;
+        
     }
 }
