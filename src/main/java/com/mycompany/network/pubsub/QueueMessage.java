@@ -14,4 +14,19 @@ public class QueueMessage {
     public String description;
     public MessageTopic target;
     public int execCode;
+    public QueueMessage(
+        String _name,
+        int _state,
+        String _commandMessage,
+        String _description,
+        MessageTopic _target,
+        int _execCode
+    ) {
+        this.name = _name;
+        this.state = _state;
+        this.commandMessage = _commandMessage;
+        this.description = _description;
+        this.target = _target;
+        this.execCode = _execCode;
+    }
 }

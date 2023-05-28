@@ -1,4 +1,7 @@
+import static org.junit.jupiter.api.Assertions.*;
 
+
+import com.mycompany.network.client.TaskConnectClient;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
@@ -28,8 +31,23 @@ public class TaskConnectClientTest {
     }
 
     @Test
-    public void testSomeMethod() {
-        
+    public void testCreateTask() {
+        TaskConnectClient client = new TaskConnectClient();
+        var _task = "task--eewlkj-1112k";
+        var _parent = "parent-2112";
+        var taskPath = client.CreateTask(_task, _parent);
+        assertNotEquals(taskPath, _task);
+        assertNotEquals(taskPath, _parent);
+    }
+    
+    @Test
+    public void testQueuePath() {
+        TaskConnectClient client = new TaskConnectClient();
+        var _task = "taklkw--eeewlkkj111-kjk"; 
+        var _parent = "3kj2klnlk9kj0l;ll-0-";
+        var _location = "asia/tokyo";
+        var queuePath = client.QueuePath(_task, _parent, _location);
+        assertEquals(queuePath, "");
     }
     
 }
