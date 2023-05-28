@@ -9,5 +9,8 @@ package com.mycompany.network.pubsub;
  * キューで設定するトピック情報
  */
 public class MessageTopic {
+    /**
+     * メッセージキーワード検索用配列
+     */
     public String[] messages;
 }

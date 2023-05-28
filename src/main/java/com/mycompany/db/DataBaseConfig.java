@@ -26,6 +26,7 @@ public class DataBaseConfig {
     public String CharSet;
     
     /**
+     * データベース設定ファイルの読み込む
      * @param _userName ユーザー名
      * @param _password パスワード
      * @param _hostName ホスト名

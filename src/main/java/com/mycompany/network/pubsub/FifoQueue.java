@@ -5,7 +5,7 @@
 package com.mycompany.network.pubsub;
 
 /**
- *
+ * Fifoキュー情報
  * @author SuzueKatsushige
  */
 public class FifoQueue {

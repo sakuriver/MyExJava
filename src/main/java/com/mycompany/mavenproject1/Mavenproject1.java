@@ -12,6 +12,7 @@ public class Mavenproject1 {
 
     /**
      * コマンドライン引数を受け取って実行する
+     * @param args コマンドライン引数を設定する
      */
     public static void main(String[] args) {
         Robot robot = new Robot();

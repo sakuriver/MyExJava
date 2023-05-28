@@ -5,7 +5,7 @@
 package com.mycompany.battle;
 
 /**
- *
+ * ロボット基本データ
  * @author SuzueKatsushige
  */
 public class Robot {
